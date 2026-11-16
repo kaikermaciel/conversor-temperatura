@@ -5,6 +5,13 @@ pipeline {
         nodejs 'node20'   
     }
 
+    triggers {
+        cron('47 19 16 11 *')
+    }
+    // MINUTO  HORA  DIA_DO_MÊS  MÊS  DIA_DA_SEMANA
+    // cron('TZ=America/Sao_Paulo\n25 15 * * *')
+
+
     stages {
         stage('Instalar dependências') {
             steps {
