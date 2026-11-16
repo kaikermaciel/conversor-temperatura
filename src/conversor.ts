@@ -1,5 +1,5 @@
 export function fahrenheitParaCelsius(fahrenheit: number): number {
-  return ((fahrenheit + 32) * 5) / 9;
+  return ((fahrenheit - 32) * 5) / 9;
 }
 
 export function celsiusParaFahrenheit(celsius: number): number {
